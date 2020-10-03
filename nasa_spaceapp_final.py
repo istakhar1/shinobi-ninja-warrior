@@ -65,7 +65,7 @@ def sendEmail():
 
 #this is deep learning model
 while True:
-    imgResp=urlopen("http://10.85.224.85:8080/shot.jpg")
+    imgResp=urlopen("http://10.85.224.85:8080/shot.jpg")#this will be change day by day its depends on our curernt ip wecam address
     imgnp=np.array(bytearray(imgResp.read()),dtype=np.uint8)
     video=cv2.imdecode(imgnp,-1)
     grabbed=video
